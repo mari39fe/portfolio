@@ -28,11 +28,14 @@ img {
 }
 
 section {
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0;
 }
 
-.sectionwrapper {}
+.sectionwrapper {
+    margin: 0;
+    padding: 0;
+}
 
 @font-face {
     font-family: 'inter ui';
@@ -44,7 +47,8 @@ section {
 
 h1 {
     font-family: 'inter ui';
-    font-size: 3.5rem;
+    font-size: 12vw;
+    margin: 10vw 11vw -6vw 11vw;
     /*    text-transform: uppercase;*/
 
 }
@@ -52,7 +56,7 @@ h1 {
 
 h2 {
     font-family: 'inter ui';
-    font-size: 2rem;
+    font-size: 5vw;
     text-transform: uppercase;
 
 }
@@ -60,6 +64,51 @@ h2 {
 p {
     font-family: 'inter ui';
     font-size: 0.8rem;
+}
+
+
+/************************** FÆLLES FOR TEMAERNE **********************************/
+
+.tema_overview p {
+    font-family: 'inter ui';
+    font-size: 2vw;
+    padding: 3vw 0 2vw 2vw;
+}
+
+.title {
+    border: 1.5vw solid white;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.title h2 {
+    flex-grow: 6;
+    flex-basis: 50px;
+    text-align: center;
+}
+
+.button_open {
+    flex-grow: 1;
+    flex-basis: 20px;
+}
+
+.description {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1vw;
+}
+
+.column_text {
+    flex-grow: 1;
+    flex-basis: 20px;
+}
+
+.column_image {
+    flex-grow: 1;
+    flex-basis: 20px;
 }
 
 /****************************** HER STARTER TOPNAV **************************************/
@@ -233,3 +282,56 @@ p {
 
 
 /****************************** HER STARTER VARIABLES **************************************/
+
+
+
+
+
+
+
+
+
+
+
+/****************************** HER STARTER TEMA 01 **************************************/
+
+
+#tema_01 .sectionwrapper {
+    background-color: #4d7489;
+    margin: 0 10vw;
+    padding: 0;
+}
+
+/****************************** HER STARTER TEMA 02 **************************************/
+
+
+#tema_02 .sectionwrapper {
+    background-color: #c65f46;
+    margin: 0 10vw;
+    padding: 0;
+}
+
+/****************************** HER STARTER TEMA 03 **************************************/
+
+#tema_03 .sectionwrapper {
+    background-color: #b45b73;
+    margin: 0 10vw;
+    padding: 0;
+}
+
+/****************************** HER STARTER TEMA 04 **************************************/
+
+
+#tema_04 .sectionwrapper {
+    background-color: #9f7598;
+    margin: 0 10vw;
+    padding: 0;
+}
+
+/****************************** HER STARTER ABOUT **************************************/
+
+#about .sectionwrapper {
+    background-color: #9f7598;
+    margin: 0 10vw;
+    padding: 0;
+}
