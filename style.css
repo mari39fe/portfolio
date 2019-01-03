@@ -1,1 +1,43 @@
+/*
 
+     Indholdsfortegnelse:
+     - Generelt
+     - Variables
+
+
+
+    - Classes
+    - Keyframes
+    - Media Querys underpunkt til de forskellige?
+
+*/
+
+/****************************** HER STARTER GENERELT **************************************/
+
+body {
+    margin: 0;
+
+}
+
+img {
+
+    width: 100%;
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sectionwrapper {}
+
+
+
+
+
+
+
+
+
+
+/****************************** HER STARTER VARIABLES **************************************/
