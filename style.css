@@ -121,6 +121,20 @@ p {
     flex-grow: 1;
 }
 
+.date {
+    background-color: white;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 2vw;
+}
+
+.link {
+    background-color: white;
+    margin: 2vw;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 /****************************** HER STARTER TOPNAV **************************************/
 
 /* Add a black background color to the top navigation */
@@ -317,7 +331,7 @@ p {
 #tema_01 .sectionwrapper {
     background-color: #4d7489;
     margin: 0 10vw;
-    padding: 0;
+    padding: 0 0 2vw 0;
 }
 
 /****************************** HER STARTER TEMA 02 **************************************/
@@ -326,7 +340,7 @@ p {
 #tema_02 .sectionwrapper {
     background-color: #c65f46;
     margin: 0 10vw;
-    padding: 0;
+    padding: 0 0 2vw 0;
 }
 
 /****************************** HER STARTER TEMA 03 **************************************/
@@ -334,7 +348,7 @@ p {
 #tema_03 .sectionwrapper {
     background-color: #b45b73;
     margin: 0 10vw;
-    padding: 0;
+    padding: 0 0 2vw 0;
 }
 
 /****************************** HER STARTER TEMA 04 **************************************/
@@ -343,7 +357,7 @@ p {
 #tema_04 .sectionwrapper {
     background-color: #9f7598;
     margin: 0 10vw;
-    padding: 0;
+    padding: 0 0 2vw 0;
 }
 
 /****************************** HER STARTER ABOUT **************************************/
