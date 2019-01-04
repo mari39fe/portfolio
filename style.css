@@ -111,6 +111,16 @@ p {
     flex-basis: 20px;
 }
 
+.gallery {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+#item_name {
+    flex-basis: 1vw;
+    flex-grow: 1;
+}
+
 /****************************** HER STARTER TOPNAV **************************************/
 
 /* Add a black background color to the top navigation */
