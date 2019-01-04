@@ -331,7 +331,31 @@ p {
 /****************************** HER STARTER ABOUT **************************************/
 
 #about .sectionwrapper {
-    background-color: #9f7598;
+    background-color: #b9c974;
     margin: 0 10vw;
     padding: 0;
+}
+
+.container {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+#about p {
+    font-family: 'inter ui';
+    font-size: 2vw;
+    padding: 3vw 0 2vw 2vw;
+}
+
+/****************************** HER STARTER FOOTER **************************************/
+
+#footer .sectionwrapper {
+    background-color: #b9c974;
+    margin: 10vw 10vw 0 10vw;
+    padding: 0;
+}
+
+#footer p {
+    padding: 1vw;
+    text-align: center;
 }
