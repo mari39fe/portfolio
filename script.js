@@ -1,11 +1,9 @@
-/* øverste linje selvskrevet - gør vidst ikke noget*/
-
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 
-document.querySelector.addEventListener("click", myFunction);
+document.querySelector("#burgermenu").addEventListener("click", burgerMenu);
 
-function myFunction() {
-    var x = document.getElementById("myTopnav");
+function burgerMenu() {
+    let x = document.querySelector("#myTopnav");
     if (x.className === "topnav") {
         x.className += " responsive";
     } else {

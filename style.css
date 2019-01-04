@@ -149,6 +149,14 @@ p {
     display: none;
 }
 
+#burgermenu {
+    position: absolute;
+    top: 1.6vw;
+    left: 96vw;
+    display: none;
+
+}
+
 /************************ HER STARTER TOPNAV - MEDIAQUERIES ******************************/
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
@@ -157,7 +165,7 @@ p {
         display: none;
     }
 
-    .topnav a.icon {
+    #burgermenu {
         float: right;
         display: block;
     }
