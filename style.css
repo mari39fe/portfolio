@@ -85,7 +85,7 @@ p {
     position: absolute;
     width: 6vw;
     height: 6vw;
-    top: 51vw;
+    top: 45.5vw;
     left: 47vw;
 }
 
@@ -246,7 +246,7 @@ p {
     height: 52.05vw;
     margin: 0;
     padding: 0;
-    border: solid;
+
 }
 
 #splash p {
@@ -346,15 +346,15 @@ p {
 
 
 
-#splash_button {
-    background-image: url(arrow_down.svg);
+/*#splash_button {
+    background-image: url(svg/arrow_down.svg);
     background-size: 100%;
     position: absolute;
     width: 6vw;
     height: 6vw;
     top: 47.6vw;
     left: 47vw;
-}
+}*/
 
 
 #streg {
@@ -369,8 +369,8 @@ p {
 
 #letter1 {
     position: absolute;
-    top: 3vw;
-    left: 36vw;
+    top: 4.5vw;
+    left: 25.4vw;
     font-family: 'inter ui';
     margin: 0;
     font-size: 9vw;
@@ -378,17 +378,18 @@ p {
 
 #letter2 {
     position: absolute;
-    top: 3vw;
-    left: 43.5vw;
+    top: 4.5vw;
+    left: 32.2vw;
     font-family: 'inter ui';
     margin: 0;
     font-size: 9vw;
+
 }
 
 #letter3 {
     position: absolute;
-    top: 3vw;
-    left: 51vw;
+    top: 4.5vw;
+    left: 38.8vw;
     font-family: 'inter ui';
     margin: 0;
     font-size: 9vw;
@@ -396,8 +397,8 @@ p {
 
 #letter4 {
     position: absolute;
-    top: 3vw;
-    left: 56.5vw;
+    top: 4.5vw;
+    left: 44vw;
     font-family: 'inter ui';
     margin: 0;
     font-size: 9vw;
@@ -405,8 +406,8 @@ p {
 
 #letter5 {
     position: absolute;
-    top: 3vw;
-    left: 61.5vw;
+    top: 4.5vw;
+    left: 48.5vw;
     font-family: 'inter ui';
     margin: 0;
     font-size: 9vw;
@@ -414,8 +415,8 @@ p {
 
 #letter6 {
     position: absolute;
-    top: 3vw;
-    left: 65.7vw;
+    top: 4.5vw;
+    left: 52.3vw;
     font-family: 'inter ui';
     margin: 0;
     font-size: 9vw;
@@ -423,8 +424,8 @@ p {
 
 #letter7 {
     position: absolute;
-    top: 3vw;
-    left: 73vw;
+    top: 4.5vw;
+    left: 59vw;
     font-family: 'inter ui';
     margin: 0;
     font-size: 9vw;
@@ -432,8 +433,8 @@ p {
 
 #letter8 {
     position: absolute;
-    top: 3vw;
-    left: 76vw;
+    top: 4.5vw;
+    left: 61.8vw;
     font-family: 'inter ui';
     margin: 0;
     font-size: 9vw;
@@ -441,8 +442,8 @@ p {
 
 #letter9 {
     position: absolute;
-    top: 3vw;
-    left: 79vw;
+    top: 4.5vw;
+    left: 64.5vw;
     font-family: 'inter ui';
     margin: 0;
     font-size: 9vw;
@@ -450,8 +451,8 @@ p {
 
 #letter10 {
     position: absolute;
-    top: 3vw;
-    left: 86vw;
+    top: 4.5vw;
+    left: 70.7vw;
     font-family: 'inter ui';
     margin: 0;
     font-size: 9vw;
@@ -692,13 +693,97 @@ p {
     padding: 0 0 2vw 0;
 }
 
+
 /****************************** HER STARTER TEMA 02 **************************************/
 
+#animationwrapper_tema_02 {
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    height: 20vw;
+    margin: 0;
+    padding: 0;
+
+}
 
 #tema_02 .sectionwrapper {
     background-color: #c65f46;
     margin: 0 10vw;
     padding: 0 0 2vw 0;
+}
+
+#streg_tema_02 {
+    background-color: black;
+    position: absolute;
+    height: 13vw;
+    width: 0.2vw;
+    top: 12.5vw;
+    left: 10.5vw;
+}
+
+
+#letter1_tema_02 {
+    position: absolute;
+    top: 2vw;
+    left: 1vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+}
+
+#letter2_tema_02 {
+    position: absolute;
+    top: 2vw;
+    left: 7vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+
+}
+
+#letter3_tema_02 {
+    position: absolute;
+    top: 2vw;
+    left: 13.5vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+}
+
+#letter4_tema_02 {
+    position: absolute;
+    top: 2vw;
+    left: 24vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+}
+
+#letter5_tema_02 {
+    position: absolute;
+    top: 2vw;
+    left: 35vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+}
+
+#letter6_tema_02 {
+    position: absolute;
+    top: 2vw;
+    left: 42.7vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+}
+
+#letter7_tema_02 {
+    position: absolute;
+    top: 2vw;
+    left: 50vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
 }
 
 /****************************** HER STARTER TEMA 03 **************************************/

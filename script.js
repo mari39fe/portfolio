@@ -111,7 +111,7 @@ let isInViewport = function (elem) {
 };
 
 
-//her giver vi bare div'en et kortere navn
+/*//her giver vi bare div'en et kortere navn
 let test = document.querySelector("#test_skrift");
 
 //her tilføjer vi en eventlistener når vi scroller
@@ -119,5 +119,29 @@ window.addEventListener('scroll', function (event) {
     //her siger vi at hvis vores test element er indenfor viewporten - det er det vi tjekker i isInViewport - skal elementet test_skrift begynde en animation der hedder up_and_down
     if (isInViewport(test)) {
         document.querySelector("#test_skrift").classList = ("up_and_down")
+    }
+}, false);*/
+
+
+
+let streg = document.querySelector("#streg_tema_02");
+let letter1 = document.querySelector("#letter1_tema_02");
+let letter2 = document.querySelector("#letter2_tema_02");
+let letter3 = document.querySelector("#letter3_tema_02");
+let letter4 = document.querySelector("#letter4_tema_02");
+let letter5 = document.querySelector("#letter5_tema_02");
+let letter6 = document.querySelector("#letter6_tema_02");
+let letter7 = document.querySelector("#letter7_tema_02");
+
+window.addEventListener('scroll', function (event) {
+    if (isInViewport(streg, letter1, letter2, letter3, letter4, letter5, letter6, letter7, )) {
+        document.querySelector("#streg_tema_02").classList = ("streg_class")
+        document.querySelector("#letter1_tema_02").classList = ("moving_letters")
+        document.querySelector("#letter2_tema_02").classList = ("moving_letters_2")
+        document.querySelector("#letter3_tema_02").classList = ("moving_letters_3")
+        document.querySelector("#letter4_tema_02").classList = ("moving_letters_4")
+        document.querySelector("#letter5_tema_02").classList = ("moving_letters_5")
+        document.querySelector("#letter6_tema_02").classList = ("moving_letters_6")
+        document.querySelector("#letter7_tema_02").classList = ("moving_letters_7")
     }
 }, false);
