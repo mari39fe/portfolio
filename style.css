@@ -68,10 +68,11 @@ p {
 
 
 #top_button {
+    background-image: url(svg/arrow_top.svg);
+    background-size: 100%;
     position: fixed;
     border-radius: 50%;
     background-color: beige;
-    text-align: center;
     width: 10vw;
     height: 10vw;
     top: 88vh;
@@ -79,10 +80,9 @@ p {
 }
 
 #splash_button {
+    background-image: url(svg/arrow_down.svg);
+    background-size: 100%;
     position: absolute;
-    border-radius: 50%;
-    background-color: beige;
-    text-align: center;
     width: 6vw;
     height: 6vw;
     top: 51vw;
@@ -258,23 +258,25 @@ p {
     left: 70vw;
 }
 
-#splash h1 {
+/*#splash h1 {
     font-family: 'inter ui';
     margin: 0;
     font-size: 10vw;
     position: absolute;
     top: 17vw;
     left: 40vw;
-}
+}*/
 
 #box1 {
 
     height: 6vw;
     width: 22vw;
+    background-image: url(sky.jpg);
+    background-size: cover;
     background-color: lightblue;
     position: absolute;
     top: 42vw;
-    left: 8vw;
+    left: -23vw;
 }
 
 
@@ -282,20 +284,24 @@ p {
 
     height: 12vw;
     width: 83.3vw;
-    background-color: lavender;
+    background-image: url(Sk%C3%A6rmbillede%202019-01-05%20kl.%2000.22.54.png);
+    background-size: 100%;
     position: absolute;
     top: 25vw;
-    left: 14vw;
+    left: 110vw;
 }
 
 #box3 {
 
     height: 8vw;
     width: 33vw;
+    transform: skewX(20deg);
+    background-image: url(sky.jpg);
+    background-size: 100%;
     background-color: lightpink;
     position: absolute;
     top: 6vw;
-    left: 4vw;
+    left: -35vw;
 }
 
 #circle1 {
@@ -305,7 +311,7 @@ p {
     border-radius: 50%;
     background-color: lightpink;
     position: absolute;
-    top: 40vw;
+    top: 60vw;
     left: 55vw;
 
 }
@@ -315,9 +321,11 @@ p {
     height: 5vw;
     width: 5vw;
     border-radius: 50%;
+    background-image: url(sky.jpg);
+    background-size: 100%;
     background-color: lightpink;
     position: absolute;
-    top: 40vw;
+    top: 60vw;
     left: 63vw;
 
 }
@@ -329,16 +337,344 @@ p {
     border-radius: 50%;
     background-color: lightpink;
     position: absolute;
-    top: 40vw;
+    top: 60vw;
     left: 71vw;
 
 }
 
 
-/****************************** HER STARTER VARIABLES **************************************/
 
 
 
+#splash_button {
+    background-image: url(arrow_down.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 6vw;
+    height: 6vw;
+    top: 47.6vw;
+    left: 47vw;
+}
+
+
+#streg {
+    background-color: black;
+    position: absolute;
+    height: 13vw;
+    width: 0.1vw;
+    top: 16vw;
+    left: 35.5vw;
+}
+
+
+#letter1 {
+    position: absolute;
+    top: 3vw;
+    left: 36vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+}
+
+#letter2 {
+    position: absolute;
+    top: 3vw;
+    left: 43.5vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+}
+
+#letter3 {
+    position: absolute;
+    top: 3vw;
+    left: 51vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+}
+
+#letter4 {
+    position: absolute;
+    top: 3vw;
+    left: 56.5vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+}
+
+#letter5 {
+    position: absolute;
+    top: 3vw;
+    left: 61.5vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+}
+
+#letter6 {
+    position: absolute;
+    top: 3vw;
+    left: 65.7vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+}
+
+#letter7 {
+    position: absolute;
+    top: 3vw;
+    left: 73vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+}
+
+#letter8 {
+    position: absolute;
+    top: 3vw;
+    left: 76vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+}
+
+#letter9 {
+    position: absolute;
+    top: 3vw;
+    left: 79vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+}
+
+#letter10 {
+    position: absolute;
+    top: 3vw;
+    left: 86vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+}
+
+
+
+
+/****************************** HER STARTER KEYFRAMES OG CLASSES TIL SPLASH **************************************/
+
+.in_right {
+    animation-name: from_right;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes from_right {
+    0% {
+        transform: translateX(0vw);
+        transform: skewX(20deg);
+    }
+
+    100% {
+        transform: translateX(-90vw);
+
+
+    }
+}
+
+
+@keyframes up_and_down_kf {
+    0% {
+        transform: translateY(0vw)
+    }
+
+    25% {
+        transform: translateY(1vw)
+    }
+
+    50% {
+        transform: translateY(0vw)
+    }
+
+    75% {
+        transform: translateY(1vw)
+    }
+
+    100% {
+        transform: translateY(0vw)
+    }
+}
+
+.up_and_down {
+    animation: up_and_down_kf 3s 5 ease-in-out;
+}
+
+.in_bottom {
+    animation-name: going_up;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.in_bottom2 {
+    animation: going_up 2s 1 linear 1s forwards;
+}
+
+.in_bottom3 {
+    animation: going_up 2s 1 linear 2s forwards;
+}
+
+.in_left {
+    animation: in_left_kf 1s 1 forwards;
+}
+
+.in_left_2 {
+    animation: in_left_kf 1s 1 1s forwards;
+}
+
+@keyframes in_left_kf {
+    0% {
+        transform: translateX(0vw)
+    }
+
+    100% {
+        transform: translateX(35vw)
+    }
+}
+
+@keyframes going_up {
+
+    0% {
+        transform: translateY(0vw)
+    }
+
+    100% {
+        transform: translateY(-20vw)
+    }
+
+}
+
+
+.moving_letters {
+    animation-name: moving_letters_kf;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+
+}
+
+.moving_letters_2 {
+    animation: moving_letters_kf 0.2s 1 ease-in both 0.15s
+}
+
+.moving_letters_3 {
+    animation: moving_letters_kf 0.2s 1 ease-in both 0.3s
+}
+
+.moving_letters_4 {
+    animation: moving_letters_kf 0.2s 1 ease-in both 0.45s
+}
+
+.moving_letters_5 {
+    animation: moving_letters_kf 0.2s 1 ease-in both 0.6s
+}
+
+.moving_letters_6 {
+    animation: moving_letters_kf 0.2s 1 ease-in both 0.75s
+}
+
+.moving_letters_7 {
+    animation: moving_letters_kf 0.2s 1 ease-in both 0.9s
+}
+
+.moving_letters_8 {
+    animation: moving_letters_kf 0.2s 1 ease-in both 1.05s
+}
+
+.moving_letters_9 {
+    animation: moving_letters_kf 0.2s 1 ease-in both 1.2s
+}
+
+.moving_letters_10 {
+    animation: moving_letters_kf 0.2s 1 ease-in both 1.35s
+}
+
+@keyframes moving_letters_kf {
+
+    0% {
+        transform: scale(0.6);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(0.8);
+        opacity: 0.5;
+
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes streg_kf {
+    0% {
+        transform: translateX(0vw);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateX(55vw);
+        opacity: 1;
+    }
+
+    97% {
+        transform: translateX(55vw);
+        opacity: 0;
+    }
+
+    99% {
+        transform: translateX(55vw);
+        opacity: 1;
+    }
+
+    99% {
+        transform: translateX(55vw);
+        opacity: 0;
+    }
+}
+
+.appear {
+    animation: appear_kf 3s 1 ease-in
+}
+
+@keyframes appear_kf {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+
+.hide {
+    display: none;
+}
+
+.streg_class {
+    animation-name: streg_kf;
+    animation-duration: 1.6s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+}
 
 
 
