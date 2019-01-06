@@ -97,14 +97,14 @@ p {
     padding: 3vw 0 2vw 2vw;
 }
 
-.title {
+/*.title {
     border: 1.5vw solid white;
     margin: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 
-}
+}*/
 
 .title h2 {
     flex-grow: 6;
@@ -112,10 +112,10 @@ p {
     text-align: center;
 }
 
-.button_open {
+/*.button_open {
     flex-grow: 1;
     flex-basis: 20px;
-}
+}*/
 
 .description {
     display: flex;
@@ -691,6 +691,51 @@ p {
     background-color: #4d7489;
     margin: 0 10vw;
     padding: 0 0 2vw 0;
+}
+
+#tema_01 #item_name {
+    position: relative;
+}
+
+#tema_01 .title_1 {
+    background-image: url(sky.jpg);
+    width: 40vw;
+    height: 48vw;
+    top: 0vw;
+
+}
+
+#tema_01 .button_open_1 {
+    position: absolute;
+    width: 8vw;
+    height: 8vw;
+    top: 4.1vw;
+    left: 29vw;
+    background-size: cover;
+    background-image: url(svg/arrow_down.svg);
+    background-color: beige;
+    cursor: pointer;
+
+}
+
+#tema_01 .title_2 {
+    background-color: #831a3c;
+    width: 40vw;
+    height: 48vw;
+    top: 0vw;
+
+}
+
+#tema_01 .button_open_2 {
+    position: absolute;
+    width: 8vw;
+    height: 8vw;
+    top: 4.1vw;
+    left: 29vw;
+    background-size: cover;
+    background-image: url(svg/arrow_down.svg);
+    background-color: beige;
+
 }
 
 

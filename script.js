@@ -90,6 +90,19 @@ function buttonAppear() {
 
 }
 
+/////////HER STARTER TEMA FOLD UD  ////////////////////////////////
+
+document.querySelector("#tema_01 .button_open_1").addEventListener("click", showContent1);
+
+function showContent1() {
+    console.log("showContent1");
+    document.querySelector(".hidden_content_1").classList.remove("hide");
+
+
+}
+
+
+
 
 /////////HER STARTER SCROLL EVENTS ////////////////////////////////
 
