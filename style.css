@@ -22,6 +22,10 @@ body {
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 img {
 
     width: 100%;
@@ -163,8 +167,11 @@ p {
 
 /* Add a black background color to the top navigation */
 .topnav {
+    display: flex;
     background-color: rgba(255, 182, 193, 0.19);
     overflow: hidden;
+    justify-content: space-around;
+
 }
 
 /* Style the links inside the navigation bar */
@@ -187,10 +194,10 @@ p {
 }
 
 /* Add an active class to highlight the current page */
-.active {
+/*.active {
     background-color: rgba(114, 113, 113, 0.4);
     color: blue;
-}
+}*/
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
@@ -199,9 +206,10 @@ p {
 
 #burgermenu {
     position: absolute;
-    top: 1.6vw;
-    left: 96vw;
+    top: 53.5vw;
+    left: 94vw;
     display: none;
+    z-index: 1;
 
 }
 
@@ -213,9 +221,15 @@ p {
         display: none;
     }
 
+    .topnav {
+        justify-content: flex-start;
+    }
+
     #burgermenu {
-        float: right;
+
         display: block;
+
+
     }
 }
 
@@ -667,9 +681,7 @@ p {
 }
 
 
-.hide {
-    display: none;
-}
+
 
 .streg_class {
     animation-name: streg_kf;
@@ -691,8 +703,92 @@ p {
 
 #tema_01 .sectionwrapper {
     background-color: #4d7489;
-    margin: 0 10vw;
+    margin: 0 10vw 0vw 10vw;
     padding: 0 0 2vw 0;
+}
+
+#animationwrapper_tema_01 {
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    height: 20vw;
+    margin: 0;
+    padding: 0;
+
+}
+
+#streg_tema_01 {
+    background-color: black;
+    position: absolute;
+    height: 13vw;
+    width: 0.2vw;
+    top: 12.5vw;
+    left: 10.5vw;
+}
+
+
+#letter1_tema_01 {
+    position: absolute;
+    top: 2vw;
+    left: 1vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+}
+
+#letter2_tema_01 {
+    position: absolute;
+    top: 2vw;
+    left: 7vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+
+}
+
+#letter3_tema_01 {
+    position: absolute;
+    top: 2vw;
+    left: 13.5vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+}
+
+#letter4_tema_01 {
+    position: absolute;
+    top: 2vw;
+    left: 24vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+}
+
+#letter5_tema_01 {
+    position: absolute;
+    top: 2vw;
+    left: 35vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+}
+
+#letter6_tema_01 {
+    position: absolute;
+    top: 2vw;
+    left: 42.7vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+}
+
+#letter7_tema_01 {
+    position: absolute;
+    top: 2vw;
+    left: 47.2vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
 }
 
 #tema_01 #item_name {
@@ -838,6 +934,16 @@ p {
 }
 
 /****************************** HER STARTER TEMA 03 **************************************/
+#animationwrapper_tema_03 {
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    height: 20vw;
+    margin: 0;
+    padding: 0;
+
+}
+
 
 #tema_03 .sectionwrapper {
     background-color: #b45b73;
@@ -845,8 +951,92 @@ p {
     padding: 0 0 2vw 0;
 }
 
+#streg_tema_03 {
+    background-color: black;
+    position: absolute;
+    height: 13vw;
+    width: 0.2vw;
+    top: 12.5vw;
+    left: 10.5vw;
+}
+
+
+#letter1_tema_03 {
+    position: absolute;
+    top: 2vw;
+    left: 1vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+}
+
+#letter2_tema_03 {
+    position: absolute;
+    top: 2vw;
+    left: 7vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+
+}
+
+#letter3_tema_03 {
+    position: absolute;
+    top: 2vw;
+    left: 13.5vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+}
+
+#letter4_tema_03 {
+    position: absolute;
+    top: 2vw;
+    left: 24vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+}
+
+#letter5_tema_03 {
+    position: absolute;
+    top: 2vw;
+    left: 35vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+}
+
+#letter6_tema_03 {
+    position: absolute;
+    top: 2vw;
+    left: 42.7vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+}
+
+#letter7_tema_03 {
+    position: absolute;
+    top: 2vw;
+    left: 50vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+}
+
+
 /****************************** HER STARTER TEMA 04 **************************************/
 
+#animationwrapper_tema_04 {
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    height: 20vw;
+    margin: 0;
+    padding: 0;
+
+}
 
 #tema_04 .sectionwrapper {
     background-color: #9f7598;
@@ -854,13 +1044,162 @@ p {
     padding: 0 0 2vw 0;
 }
 
+#streg_tema_04 {
+    background-color: black;
+    position: absolute;
+    height: 13vw;
+    width: 0.2vw;
+    top: 12.5vw;
+    left: 10.5vw;
+}
+
+
+#letter1_tema_04 {
+    position: absolute;
+    top: 2vw;
+    left: 1vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+}
+
+#letter2_tema_04 {
+    position: absolute;
+    top: 2vw;
+    left: 7vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+
+}
+
+#letter3_tema_04 {
+    position: absolute;
+    top: 2vw;
+    left: 13.5vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+}
+
+#letter4_tema_04 {
+    position: absolute;
+    top: 2vw;
+    left: 24vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+}
+
+#letter5_tema_04 {
+    position: absolute;
+    top: 2vw;
+    left: 35vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+}
+
+#letter6_tema_04 {
+    position: absolute;
+    top: 2vw;
+    left: 42.7vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+}
+
+#letter7_tema_04 {
+    position: absolute;
+    top: 2vw;
+    left: 50vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+}
+
 /****************************** HER STARTER ABOUT **************************************/
+#animationwrapper_about {
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    height: 20vw;
+    margin: 0;
+    padding: 0;
+
+}
 
 #about .sectionwrapper {
     background-color: #b9c974;
     margin: 0 10vw;
     padding: 0;
 }
+
+#streg_about {
+    background-color: black;
+    position: absolute;
+    height: 13vw;
+    width: 0.2vw;
+    top: 12.5vw;
+    left: 10.5vw;
+}
+
+
+#letter1_about {
+    position: absolute;
+    top: 2vw;
+    left: 1vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+}
+
+#letter2_about {
+    position: absolute;
+    top: 2vw;
+    left: 9.5vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+
+}
+
+#letter3_about {
+    position: absolute;
+    top: 2vw;
+    left: 16.7vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+}
+
+#letter4_about {
+    position: absolute;
+    top: 2vw;
+    left: 23.4vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+}
+
+#letter5_about {
+    position: absolute;
+    top: 2vw;
+    left: 31vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+}
+
+#letter6_about {
+    position: absolute;
+    top: 2vw;
+    left: 35vw;
+    font-family: 'inter ui';
+    margin: 0;
+    font-size: 9vw;
+}
+
 
 .container {
     flex-wrap: wrap;
@@ -872,6 +1211,8 @@ p {
     font-size: 2vw;
     padding: 3vw 0 2vw 2vw;
 }
+
+
 
 /****************************** HER STARTER FOOTER **************************************/
 
@@ -894,9 +1235,16 @@ p {
 }
 */
 
-.open {
-    color: aqua;
+.hide {
+
+    display: none;
 }
+
+/*.hidden_content_1 {
+    animation-name: open_kf;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+}*/
 
 
 .button_open_1 {
@@ -913,42 +1261,60 @@ p {
 
 }
 
-.on_off {
-    animation-name: on_off_kf;
-    animation-duration: 1s;
+.down {
+    animation: on_off_kf 0.4s steps(4) forwards;
+    animation-fill-mode: forwards;
     animation-iteration-count: 1;
-    animation-fill-mode: both;
-    animation-timing-function: steps(5);
 }
 
-.off_on {
-    animation-name: on_off_kf;
-    animation-duration: 1s;
+
+.top {
+    animation: off_on_kf 0.4s steps(4) forwards;
+    animation-fill-mode: forwards;
     animation-iteration-count: 1;
+}
+
+.show {
+    animation-name: open_kf;
+    animation-duration: 1s;
     animation-fill-mode: both;
-    animation-timing-function: steps(5);
-    animation-direction: reverse;
-}
-
-.on {
-
-    background-position: 0 0;
-
-}
-
-.off {
-
-    background-position: -400% 0;
-
 }
 
 @keyframes on_off_kf {
     0% {
         background-position: 0 0;
-
     }
 
     100% {
-        background-position: -500% 0;
+        background-position: -400% 0;
+    }
+}
+
+@keyframes off_on_kf {
+    0% {
+        background-position: -400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+@keyframes open_kf {
+    0% {
+        display: block;
+    }
+
+    1% {
+        opacity: 0;
+    }
+
+
+    99% {
+        opacity: 1;
+    }
+
+    100% {
+        display: none;
     }
 }

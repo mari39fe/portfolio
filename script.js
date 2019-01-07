@@ -128,6 +128,7 @@ function checkIfOpen() {
         //Ny linje
         document.querySelector(".button_open_1").classList = ("button_open_1");
         document.querySelector(".button_open_1").classList.add("on_off");
+        document.querySelector(".button_open_1").classList.add("top");
         document.querySelector(".button_open_1").classList.remove("on");
         showContent1();
 
@@ -140,6 +141,7 @@ function checkIfOpen() {
         //Ny linje
         document.querySelector(".button_open_1").classList = ("button_open_1");
         document.querySelector(".button_open_1").classList.add("off_on");
+        document.querySelector(".button_open_1").classList.add("down");
         document.querySelector(".button_open_1").classList.remove("off");
         hideContent1();
 
@@ -153,20 +155,19 @@ function hideContent1() {
     document.querySelector(".button_open_1").removeEventListener("click", hideContent1);
 
     document.querySelector(".hidden_content_1").classList.remove("hide");
-    //Mathias har slettet dette
-    //document.querySelector(".hidden_content_1").classList.add("open");
+    document.querySelector(".button_open_1").addEventListener("click", checkIfOpen);
 
 
-
-    //skift grafik fra grøn til rød
+    //Mathias har slettet alt dette
+    /* //skift grafik fra grøn til rød
     document.querySelector(".button_open_1").classList.add("off")
     document.querySelector(".button_open_1").classList.remove("on")
 
     //gå til state of off
     document.querySelector(".button_open_1").classList.remove("on_off");
     document.querySelector(".button_open_1").classList.add("off");
+*/
 
-    document.querySelector(".button_open_1").addEventListener("click", checkIfOpen);
 
 }
 
@@ -174,21 +175,20 @@ function showContent1() {
     console.log("showContent1");
 
     document.querySelector(".button_open_1").removeEventListener("click", showContent1);
-
-    //Mathias har slettet dette
-    //document.querySelector(".hidden_content_1").classList = ("hide");
-    document.querySelector(".hidden_content_1").classList.add("hide");
+    document.querySelector(".description").classList.toggle("show");
+    document.querySelector(".button_open_1").addEventListener("click", checkIfOpen);
 
 
-    //skift grafik fra rød til grøn
+    //Mathias har slettet alt dette
+    /* //skift grafik fra rød til grøn
     document.querySelector(".button_open_1").classList.remove("off")
     document.querySelector(".button_open_1").classList.add("on")
 
     //gå til state of on
     document.querySelector(".button_open_1").classList.remove("off_on");
     document.querySelector(".button_open_1").classList.add("on");
+*/
 
-    document.querySelector(".button_open_1").addEventListener("click", checkIfOpen);
 
 }
 
@@ -249,7 +249,7 @@ function hideContent1() {
 */
 
 
-//////////////////////HER STARTER SCROLL EVENTS ////////////////////////////////
+///////////////////HER STARTER SCROLL EVENTS - DEN GENERELLE FUNKTION  /////////////////////////
 
 
 
@@ -269,18 +269,37 @@ let isInViewport = function (elem) {
 };
 
 
-/*//her giver vi bare div'en et kortere navn
-let test = document.querySelector("#test_skrift");
 
-//her tilføjer vi en eventlistener når vi scroller
+
+
+////////////// HER STARTER TEMA 1 TITLENS ANIMATION ////////////////////////
+
+let streg_tema_1 = document.querySelector("#streg_tema_01");
+let letter1_tema_1 = document.querySelector("#letter1_tema_01");
+let letter2_tema_1 = document.querySelector("#letter2_tema_01");
+let letter3_tema_1 = document.querySelector("#letter3_tema_01");
+let letter4_tema_1 = document.querySelector("#letter4_tema_01");
+let letter5_tema_1 = document.querySelector("#letter5_tema_01");
+let letter6_tema_1 = document.querySelector("#letter6_tema_01");
+let letter7_tema_1 = document.querySelector("#letter7_tema_01");
+
 window.addEventListener('scroll', function (event) {
-    //her siger vi at hvis vores test element er indenfor viewporten - det er det vi tjekker i isInViewport - skal elementet test_skrift begynde en animation der hedder up_and_down
-    if (isInViewport(test)) {
-        document.querySelector("#test_skrift").classList = ("up_and_down")
+    if (isInViewport(streg_tema_1, letter1_tema_1, letter2_tema_1, letter3_tema_1, letter4_tema_1, letter5_tema_1, letter6_tema_1, letter7_tema_1, )) {
+        document.querySelector("#streg_tema_01").classList = ("streg_class")
+        document.querySelector("#letter1_tema_01").classList = ("moving_letters")
+        document.querySelector("#letter2_tema_01").classList = ("moving_letters_2")
+        document.querySelector("#letter3_tema_01").classList = ("moving_letters_3")
+        document.querySelector("#letter4_tema_01").classList = ("moving_letters_4")
+        document.querySelector("#letter5_tema_01").classList = ("moving_letters_5")
+        document.querySelector("#letter6_tema_01").classList = ("moving_letters_6")
+        document.querySelector("#letter7_tema_01").classList = ("moving_letters_7")
     }
-}, false);*/
+}, false);
 
 
+
+
+////////////// HER STARTER TEMA 2 TITLENS ANIMATION ////////////////////////
 
 let streg = document.querySelector("#streg_tema_02");
 let letter1 = document.querySelector("#letter1_tema_02");
@@ -301,5 +320,78 @@ window.addEventListener('scroll', function (event) {
         document.querySelector("#letter5_tema_02").classList = ("moving_letters_5")
         document.querySelector("#letter6_tema_02").classList = ("moving_letters_6")
         document.querySelector("#letter7_tema_02").classList = ("moving_letters_7")
+    }
+}, false);
+
+
+////////////// HER STARTER TEMA 3 TITLENS ANIMATION ////////////////////////
+
+let streg_tema_3 = document.querySelector("#streg_tema_03");
+let letter1_tema_3 = document.querySelector("#letter1_tema_03");
+let letter2_tema_3 = document.querySelector("#letter2_tema_03");
+let letter3_tema_3 = document.querySelector("#letter3_tema_03");
+let letter4_tema_3 = document.querySelector("#letter4_tema_03");
+let letter5_tema_3 = document.querySelector("#letter5_tema_03");
+let letter6_tema_3 = document.querySelector("#letter6_tema_03");
+let letter7_tema_3 = document.querySelector("#letter7_tema_03");
+
+window.addEventListener('scroll', function (event) {
+    if (isInViewport(streg_tema_3, letter1_tema_3, letter2_tema_3, letter3_tema_3, letter4_tema_3, letter5_tema_3, letter6_tema_3, letter7_tema_3, )) {
+        document.querySelector("#streg_tema_03").classList = ("streg_class")
+        document.querySelector("#letter1_tema_03").classList = ("moving_letters")
+        document.querySelector("#letter2_tema_03").classList = ("moving_letters_2")
+        document.querySelector("#letter3_tema_03").classList = ("moving_letters_3")
+        document.querySelector("#letter4_tema_03").classList = ("moving_letters_4")
+        document.querySelector("#letter5_tema_03").classList = ("moving_letters_5")
+        document.querySelector("#letter6_tema_03").classList = ("moving_letters_6")
+        document.querySelector("#letter7_tema_03").classList = ("moving_letters_7")
+    }
+}, false);
+
+
+////////////// HER STARTER TEMA 4 TITLENS ANIMATION ////////////////////////
+
+let streg_tema_4 = document.querySelector("#streg_tema_04");
+let letter1_tema_4 = document.querySelector("#letter1_tema_04");
+let letter2_tema_4 = document.querySelector("#letter2_tema_04");
+let letter3_tema_4 = document.querySelector("#letter3_tema_04");
+let letter4_tema_4 = document.querySelector("#letter4_tema_04");
+let letter5_tema_4 = document.querySelector("#letter5_tema_04");
+let letter6_tema_4 = document.querySelector("#letter6_tema_04");
+let letter7_tema_4 = document.querySelector("#letter7_tema_04");
+
+window.addEventListener('scroll', function (event) {
+    if (isInViewport(streg_tema_4, letter1_tema_4, letter2_tema_4, letter3_tema_4, letter4_tema_4, letter5_tema_4, letter6_tema_4, letter7_tema_4, )) {
+        document.querySelector("#streg_tema_04").classList = ("streg_class")
+        document.querySelector("#letter1_tema_04").classList = ("moving_letters")
+        document.querySelector("#letter2_tema_04").classList = ("moving_letters_2")
+        document.querySelector("#letter3_tema_04").classList = ("moving_letters_3")
+        document.querySelector("#letter4_tema_04").classList = ("moving_letters_4")
+        document.querySelector("#letter5_tema_04").classList = ("moving_letters_5")
+        document.querySelector("#letter6_tema_04").classList = ("moving_letters_6")
+        document.querySelector("#letter7_tema_04").classList = ("moving_letters_7")
+    }
+}, false);
+
+
+////////////// HER STARTER ABOUT TITLENS ANIMATION ////////////////////////
+
+let streg_about = document.querySelector("#streg_about");
+let letter1_about = document.querySelector("#letter1_about");
+let letter2_about = document.querySelector("#letter2_about");
+let letter3_about = document.querySelector("#letter3_about");
+let letter4_about = document.querySelector("#letter4_about");
+let letter5_about = document.querySelector("#letter5_about");
+let letter6_about = document.querySelector("#letter6_about");
+
+window.addEventListener('scroll', function (event) {
+    if (isInViewport(streg_about, letter1_about, letter2_about, letter3_about, letter4_about, letter5_about, letter6_about, )) {
+        document.querySelector("#streg_about").classList = ("streg_class")
+        document.querySelector("#letter1_about").classList = ("moving_letters")
+        document.querySelector("#letter2_about").classList = ("moving_letters_2")
+        document.querySelector("#letter3_about").classList = ("moving_letters_3")
+        document.querySelector("#letter4_about").classList = ("moving_letters_4")
+        document.querySelector("#letter5_about").classList = ("moving_letters_5")
+        document.querySelector("#letter6_about").classList = ("moving_letters_6")
     }
 }, false);
