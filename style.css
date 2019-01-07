@@ -139,8 +139,10 @@ p {
 }
 
 #item_name {
-    flex-basis: 1vw;
+    flex-basis: 240px;
     flex-grow: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .date {
@@ -702,10 +704,12 @@ p {
     width: 40vw;
     height: 48vw;
     top: 0vw;
+    flex-basis: 50px;
+    flex-grow: 1;
 
 }
 
-#tema_01 .button_open_1 {
+/*#tema_01 .button_open_1 {
     position: absolute;
     width: 8vw;
     height: 8vw;
@@ -716,13 +720,15 @@ p {
     background-color: beige;
     cursor: pointer;
 
-}
+}*/
 
 #tema_01 .title_2 {
     background-color: #831a3c;
     width: 40vw;
     height: 48vw;
     top: 0vw;
+    flex-basis: 50px;
+    flex-grow: 1;
 
 }
 
@@ -887,3 +893,62 @@ p {
     display: none;
 }
 */
+
+.open {
+    color: aqua;
+}
+
+
+.button_open_1 {
+    background-size: 500% 100%;
+    width: 8vw;
+    height: 8vw;
+    top: 4.1vw;
+    left: 29vw;
+    position: absolute;
+    cursor: pointer;
+    background-image: url(svg/arrow_sprite.svg);
+    background-color: beige;
+
+
+}
+
+.on_off {
+    animation-name: on_off_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: steps(5);
+}
+
+.off_on {
+    animation-name: on_off_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: steps(5);
+    animation-direction: reverse;
+}
+
+.on {
+
+    background-position: 0 0;
+
+}
+
+.off {
+
+    background-position: -400% 0;
+
+}
+
+@keyframes on_off_kf {
+    0% {
+        background-position: 0 0;
+
+    }
+
+    100% {
+        background-position: -500% 0;
+    }
+}

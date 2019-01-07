@@ -14,6 +14,23 @@ function burgerMenu() {
 }
 
 
+/////////HER STARTER SCROLL TO TOP ////////////////////////////////
+
+window.onscroll = function () {
+    scrollTopButton()
+};
+
+function scrollTopButton() {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        document.querySelector("#top_button").classList = "appear";
+    } else {
+        document.querySelector("#top_button").classList = "hide";
+    }
+}
+
+
+
+
 /////////HER STARTER SPLASH ANIMATIONER ////////////////////////////////
 
 window.addEventListener("load", showPage);
@@ -92,19 +109,147 @@ function buttonAppear() {
 
 /////////HER STARTER TEMA FOLD UD  ////////////////////////////////
 
-document.querySelector("#tema_01 .button_open_1").addEventListener("click", showContent1);
+
+//Prøver lige igen
+
+let boxShow = true;
+
+document.querySelector(".button_open_1").addEventListener("click", checkIfOpen);
+
+function checkIfOpen() {
+    console.log("checkIfOpen");
+
+    if (boxShow == false) {
+        boxShow = true;
+        //soundsOff();
+        console.log("tænd for box");
+        //tænd for sfx
+        document.querySelector("#tema_01 .button_open_1").removeEventListener("click", checkIfOpen);
+        //Ny linje
+        document.querySelector(".button_open_1").classList = ("button_open_1");
+        document.querySelector(".button_open_1").classList.add("on_off");
+        document.querySelector(".button_open_1").classList.remove("on");
+        showContent1();
+
+    } else {
+        boxShow = false;
+        //soundsOn();
+        console.log("sluk for box");
+        //sluk for sfx
+        document.querySelector("#tema_01 .button_open_1").removeEventListener("click", checkIfOpen);
+        //Ny linje
+        document.querySelector(".button_open_1").classList = ("button_open_1");
+        document.querySelector(".button_open_1").classList.add("off_on");
+        document.querySelector(".button_open_1").classList.remove("off");
+        hideContent1();
+
+    }
+}
+
+
+function hideContent1() {
+    console.log("hideContent1");
+
+    document.querySelector(".button_open_1").removeEventListener("click", hideContent1);
+
+    document.querySelector(".hidden_content_1").classList.remove("hide");
+    //Mathias har slettet dette
+    //document.querySelector(".hidden_content_1").classList.add("open");
+
+
+
+    //skift grafik fra grøn til rød
+    document.querySelector(".button_open_1").classList.add("off")
+    document.querySelector(".button_open_1").classList.remove("on")
+
+    //gå til state of off
+    document.querySelector(".button_open_1").classList.remove("on_off");
+    document.querySelector(".button_open_1").classList.add("off");
+
+    document.querySelector(".button_open_1").addEventListener("click", checkIfOpen);
+
+}
 
 function showContent1() {
     console.log("showContent1");
-    document.querySelector(".hidden_content_1").classList.remove("hide");
 
+    document.querySelector(".button_open_1").removeEventListener("click", showContent1);
+
+    //Mathias har slettet dette
+    //document.querySelector(".hidden_content_1").classList = ("hide");
+    document.querySelector(".hidden_content_1").classList.add("hide");
+
+
+    //skift grafik fra rød til grøn
+    document.querySelector(".button_open_1").classList.remove("off")
+    document.querySelector(".button_open_1").classList.add("on")
+
+    //gå til state of on
+    document.querySelector(".button_open_1").classList.remove("off_on");
+    document.querySelector(".button_open_1").classList.add("on");
+
+    document.querySelector(".button_open_1").addEventListener("click", checkIfOpen);
 
 }
 
 
 
+/*// Det her skulle gerne få
+document.querySelector("#tema_01 .button_open_1").addEventListener("click", checkIfOpen);
 
-/////////HER STARTER SCROLL EVENTS ////////////////////////////////
+
+//Prøver lige noget
+function checkIfOpen() {
+    console.log("checkIfOpen");
+    let h = document.querySelector(".button_open_1");
+    let c = document.querySelector(".hidden_content_1")
+    if (c.className = "open") {
+        //c.className += " hide";
+        document.querySelector(".button_open_1").addEventListener("click", hideContent1);
+    } else {
+        document.querySelector(".button_open_1").addEventListener("click", showContent1);
+    }
+
+}
+
+function showContent1() {
+    console.log("showContent1");
+    document.querySelector(".hidden_content_1").classList.remove("hide");
+    document.querySelector(".hidden_content_1").classList.add("open");
+    checkIfOpen();
+
+}
+
+function hideContent1() {
+    console.log("hideContent1");
+    document.querySelector(".hidden_content_1").classList = ("hide");
+}*/
+
+
+//////////////////////////
+
+
+
+
+/*
+let hidden = document.querySelector(".button_open_1")
+
+
+function checkIfOpen() {
+    if
+}
+
+document.querySelector("#tema_01 .button_open_1 open").addEventListener("click", hideContent1);
+
+
+function hideContent1() {
+    console.log("hideContent1");
+    document.querySelector(".hidden_content_1").classList.add("hide");
+}
+*/
+
+
+//////////////////////HER STARTER SCROLL EVENTS ////////////////////////////////
 
 
 
