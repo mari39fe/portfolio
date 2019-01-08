@@ -992,6 +992,8 @@ p {
     font-size: 9vw;
 }
 
+/****************************** HER SLUTTER TEMA 2 ANIMATION H1 **************************************/
+
 
 #tema_02 #item_name {
     position: relative;
@@ -1018,31 +1020,54 @@ p {
 
 }
 
+#tema_02 .title_2_3 {
+    background-color: #831a3c;
+    width: 40vw;
+    height: 48vw;
+    top: 0vw;
+    flex-basis: 50px;
+    flex-grow: 1;
+
+}
+
 #tema_02 .button_open_2_1 {
-    position: absolute;
+    background-size: 500% 100%;
     width: 8vw;
     height: 8vw;
     top: 4.1vw;
     left: 29vw;
-    background-size: cover;
-    background-image: url(svg/arrow_down.svg);
+    position: absolute;
+    cursor: pointer;
+    background-image: url(svg/arrow_sprite.svg);
     background-color: beige;
 
 }
 
 #tema_02 .button_open_2_2 {
-    position: absolute;
+    background-size: 500% 100%;
     width: 8vw;
     height: 8vw;
     top: 4.1vw;
     left: 29vw;
-    background-size: cover;
-    background-image: url(svg/arrow_down.svg);
+    position: absolute;
+    cursor: pointer;
+    background-image: url(svg/arrow_sprite.svg);
     background-color: beige;
 
 }
 
+#tema_02 .button_open_2_3 {
+    background-size: 500% 100%;
+    width: 8vw;
+    height: 8vw;
+    top: 4.1vw;
+    left: 29vw;
+    position: absolute;
+    cursor: pointer;
+    background-image: url(svg/arrow_sprite.svg);
+    background-color: beige;
 
+}
 
 /****************************** HER STARTER TEMA 03 **************************************/
 #animationwrapper_tema_03 {
@@ -1136,6 +1161,84 @@ p {
     font-size: 9vw;
 }
 
+/****************************** HER SLUTTER TEMA 3 ANIMATION H1 **************************************/
+
+#tema_03 #item_name {
+    position: relative;
+}
+
+#tema_03 .title_3_1 {
+    background-image: url(sky.jpg);
+    width: 40vw;
+    height: 48vw;
+    top: 0vw;
+    flex-basis: 50px;
+    flex-grow: 1;
+
+}
+
+
+#tema_03 .title_3_2 {
+    background-color: #831a3c;
+    width: 40vw;
+    height: 48vw;
+    top: 0vw;
+    flex-basis: 50px;
+    flex-grow: 1;
+
+}
+
+#tema_03 .title_3_3 {
+    background-color: #831a3c;
+    width: 40vw;
+    height: 48vw;
+    top: 0vw;
+    flex-basis: 50px;
+    flex-grow: 1;
+
+}
+
+#tema_03 .button_open_3_1 {
+    background-size: 500% 100%;
+    width: 8vw;
+    height: 8vw;
+    top: 4.1vw;
+    left: 29vw;
+    position: absolute;
+    cursor: pointer;
+    background-image: url(svg/arrow_sprite.svg);
+    background-color: beige;
+
+}
+
+#tema_03 .button_open_3_2 {
+    background-size: 500% 100%;
+    width: 8vw;
+    height: 8vw;
+    top: 4.1vw;
+    left: 29vw;
+    position: absolute;
+    cursor: pointer;
+    background-image: url(svg/arrow_sprite.svg);
+    background-color: beige;
+
+}
+
+#tema_03 .button_open_3_3 {
+    background-size: 500% 100%;
+    width: 8vw;
+    height: 8vw;
+    top: 4.1vw;
+    left: 29vw;
+    position: absolute;
+    cursor: pointer;
+    background-image: url(svg/arrow_sprite.svg);
+    background-color: beige;
+
+}
+
+
+
 
 /****************************** HER STARTER TEMA 04 **************************************/
 
@@ -1228,6 +1331,113 @@ p {
     margin: 0;
     font-size: 9vw;
 }
+
+
+
+/****************************** HER SLUTTER TEMA 4 ANIMATION H1 **************************************/
+
+#tema_04 #item_name {
+    position: relative;
+}
+
+#tema_04 .title_4_1 {
+    background-image: url(sky.jpg);
+    width: 40vw;
+    height: 48vw;
+    top: 0vw;
+    flex-basis: 50px;
+    flex-grow: 1;
+
+}
+
+
+#tema_04 .title_4_2 {
+    background-color: #831a3c;
+    width: 40vw;
+    height: 48vw;
+    top: 0vw;
+    flex-basis: 50px;
+    flex-grow: 1;
+
+}
+
+#tema_04 .title_4_3 {
+    background-color: #831a3c;
+    width: 40vw;
+    height: 48vw;
+    top: 0vw;
+    flex-basis: 50px;
+    flex-grow: 1;
+
+}
+
+#tema_04 .title_4_4 {
+    background-color: #831a3c;
+    width: 40vw;
+    height: 48vw;
+    top: 0vw;
+    flex-basis: 50px;
+    flex-grow: 1;
+
+}
+
+
+#tema_04 .button_open_4_1 {
+    background-size: 500% 100%;
+    width: 8vw;
+    height: 8vw;
+    top: 4.1vw;
+    left: 29vw;
+    position: absolute;
+    cursor: pointer;
+    background-image: url(svg/arrow_sprite.svg);
+    background-color: beige;
+
+}
+
+#tema_04 .button_open_4_2 {
+    background-size: 500% 100%;
+    width: 8vw;
+    height: 8vw;
+    top: 4.1vw;
+    left: 29vw;
+    position: absolute;
+    cursor: pointer;
+    background-image: url(svg/arrow_sprite.svg);
+    background-color: beige;
+
+}
+
+#tema_04 .button_open_4_3 {
+    background-size: 500% 100%;
+    width: 8vw;
+    height: 8vw;
+    top: 4.1vw;
+    left: 29vw;
+    position: absolute;
+    cursor: pointer;
+    background-image: url(svg/arrow_sprite.svg);
+    background-color: beige;
+
+}
+
+#tema_04 .button_open_4_4 {
+    background-size: 500% 100%;
+    width: 8vw;
+    height: 8vw;
+    top: 4.1vw;
+    left: 29vw;
+    position: absolute;
+    cursor: pointer;
+    background-image: url(svg/arrow_sprite.svg);
+    background-color: beige;
+
+}
+
+
+
+
+
 
 /****************************** HER STARTER ABOUT **************************************/
 #animationwrapper_about {

@@ -167,10 +167,6 @@ function hideContent1() {
 
 /////////HER STARTER TEMA FOLD UD - TEMA 1 BOX2 ////////////////////////////////
 
-
-//Prøver lige igen
-
-
 document.querySelector(".button_open_2").addEventListener("click", checkIfOpen2);
 
 function checkIfOpen2() {
@@ -201,7 +197,6 @@ function checkIfOpen2() {
     }
 }
 
-
 function showContent2() {
     console.log("showContent2");
 
@@ -222,6 +217,527 @@ function hideContent2() {
 
 }
 
+
+/////////HER STARTER TEMA FOLD UD - TEMA 2 BOX1 ////////////////////////////////
+
+document.querySelector(".button_open_2_1").addEventListener("click", checkIfOpen2_1);
+
+function checkIfOpen2_1() {
+    console.log("checkIfOpen2_1");
+
+    if (boxShow == false) {
+        boxShow = true;
+        console.log("luk for box");
+        document.querySelector("#tema_02 .button_open_2_1").removeEventListener("click", checkIfOpen2_1);
+        //Ny linje
+        document.querySelector(".button_open_2_1").classList = ("button_open_2_1");
+        document.querySelector(".button_open_2_1").classList.add("on_off");
+        document.querySelector(".button_open_2_1").classList.add("top");
+        document.querySelector(".button_open_2_1").classList.remove("on");
+        hideContent2_1();
+
+    } else {
+        boxShow = false;
+        console.log("åben for box");
+        document.querySelector("#tema_02 .button_open_2_1").removeEventListener("click", checkIfOpen2_1);
+        //Ny linje
+        document.querySelector(".button_open_2_1").classList = ("button_open_2_1");
+        document.querySelector(".button_open_2_1").classList.add("off_on");
+        document.querySelector(".button_open_2_1").classList.add("down");
+        document.querySelector(".button_open_2_1").classList.remove("off");
+        showContent2_1();
+
+    }
+}
+
+function showContent2_1() {
+    console.log("showContent2_1");
+
+    document.querySelector(".button_open_2_1").removeEventListener("click", showContent2_1);
+
+    document.querySelector(".hidden_content_2_1").classList.remove("hide");
+    document.querySelector(".button_open_2_1").addEventListener("click", checkIfOpen2_1);
+
+}
+
+function hideContent2_1() {
+    console.log("hideContent2_1");
+
+    document.querySelector(".button_open_2_1").removeEventListener("click", hideContent2_1);
+    document.querySelector(".hidden_content_2_1").classList.add("hide");
+    document.querySelector(".button_open_2_1").addEventListener("click", checkIfOpen2_1);
+
+
+}
+
+
+/////////HER STARTER TEMA FOLD UD - TEMA 2 BOX 2 ////////////////////////////////
+
+document.querySelector(".button_open_2_2").addEventListener("click", checkIfOpen2_2);
+
+function checkIfOpen2_2() {
+    console.log("checkIfOpen2_2");
+
+    if (boxShow == false) {
+        boxShow = true;
+        console.log("luk for box");
+        document.querySelector("#tema_02 .button_open_2_2").removeEventListener("click", checkIfOpen2_2);
+        //Ny linje
+        document.querySelector(".button_open_2_2").classList = ("button_open_2_2");
+        document.querySelector(".button_open_2_2").classList.add("on_off");
+        document.querySelector(".button_open_2_2").classList.add("top");
+        document.querySelector(".button_open_2_2").classList.remove("on");
+        hideContent2_2();
+
+    } else {
+        boxShow = false;
+        console.log("åben for box");
+        document.querySelector("#tema_02 .button_open_2_2").removeEventListener("click", checkIfOpen2_2);
+        //Ny linje
+        document.querySelector(".button_open_2_2").classList = ("button_open_2_2");
+        document.querySelector(".button_open_2_2").classList.add("off_on");
+        document.querySelector(".button_open_2_2").classList.add("down");
+        document.querySelector(".button_open_2_2").classList.remove("off");
+        showContent2_2();
+
+    }
+}
+
+function showContent2_2() {
+    console.log("showContent2_2");
+
+    document.querySelector(".button_open_2_2").removeEventListener("click", showContent2_2);
+
+    document.querySelector(".hidden_content_2_2").classList.remove("hide");
+    document.querySelector(".button_open_2_2").addEventListener("click", checkIfOpen2_2);
+
+}
+
+function hideContent2_2() {
+    console.log("hideContent2_2");
+
+    document.querySelector(".button_open_2_2").removeEventListener("click", hideContent2_2);
+    document.querySelector(".hidden_content_2_2").classList.add("hide");
+    document.querySelector(".button_open_2_2").addEventListener("click", checkIfOpen2_2);
+
+
+}
+
+/////////HER STARTER TEMA FOLD UD - TEMA 2 BOX 3 ////////////////////////////////
+
+document.querySelector(".button_open_2_3").addEventListener("click", checkIfOpen2_3);
+
+function checkIfOpen2_3() {
+    console.log("checkIfOpen2_3");
+
+    if (boxShow == false) {
+        boxShow = true;
+        console.log("luk for box");
+        document.querySelector("#tema_02 .button_open_2_3").removeEventListener("click", checkIfOpen2_3);
+        //Ny linje
+        document.querySelector(".button_open_2_3").classList = ("button_open_2_3");
+        document.querySelector(".button_open_2_3").classList.add("on_off");
+        document.querySelector(".button_open_2_3").classList.add("top");
+        document.querySelector(".button_open_2_3").classList.remove("on");
+        hideContent2_3();
+
+    } else {
+        boxShow = false;
+        console.log("åben for box");
+        document.querySelector("#tema_02 .button_open_2_3").removeEventListener("click", checkIfOpen2_3);
+        //Ny linje
+        document.querySelector(".button_open_2_3").classList = ("button_open_2_3");
+        document.querySelector(".button_open_2_3").classList.add("off_on");
+        document.querySelector(".button_open_2_3").classList.add("down");
+        document.querySelector(".button_open_2_3").classList.remove("off");
+        showContent2_3();
+
+    }
+}
+
+function showContent2_3() {
+    console.log("showContent2_3");
+
+    document.querySelector(".button_open_2_3").removeEventListener("click", showContent2_3);
+
+    document.querySelector(".hidden_content_2_3").classList.remove("hide");
+    document.querySelector(".button_open_2_3").addEventListener("click", checkIfOpen2_3);
+
+}
+
+function hideContent2_3() {
+    console.log("hideContent2_3");
+
+    document.querySelector(".button_open_2_3").removeEventListener("click", hideContent2_3);
+    document.querySelector(".hidden_content_2_3").classList.add("hide");
+    document.querySelector(".button_open_2_3").addEventListener("click", checkIfOpen2_3);
+
+
+}
+
+/////////HER STARTER TEMA FOLD UD - TEMA 3 BOX 1 ////////////////////////////////
+
+document.querySelector(".button_open_3_1").addEventListener("click", checkIfOpen3_1);
+
+function checkIfOpen3_1() {
+    console.log("checkIfOpen3_1");
+
+    if (boxShow == false) {
+        boxShow = true;
+        console.log("luk for box");
+        document.querySelector("#tema_03 .button_open_3_1").removeEventListener("click", checkIfOpen3_1);
+        //Ny linje
+        document.querySelector(".button_open_3_1").classList = ("button_open_3_1");
+        document.querySelector(".button_open_3_1").classList.add("on_off");
+        document.querySelector(".button_open_3_1").classList.add("top");
+        document.querySelector(".button_open_3_1").classList.remove("on");
+        hideContent3_1();
+
+    } else {
+        boxShow = false;
+        console.log("åben for box");
+        document.querySelector("#tema_03 .button_open_3_1").removeEventListener("click", checkIfOpen3_1);
+        //Ny linje
+        document.querySelector(".button_open_3_1").classList = ("button_open_3_1");
+        document.querySelector(".button_open_3_1").classList.add("off_on");
+        document.querySelector(".button_open_3_1").classList.add("down");
+        document.querySelector(".button_open_3_1").classList.remove("off");
+        showContent3_1();
+
+    }
+}
+
+function showContent3_1() {
+    console.log("showContent3_1");
+
+    document.querySelector(".button_open_3_1").removeEventListener("click", showContent3_1);
+
+    document.querySelector(".hidden_content_3_1").classList.remove("hide");
+    document.querySelector(".button_open_3_1").addEventListener("click", checkIfOpen3_1);
+
+}
+
+function hideContent3_1() {
+    console.log("hideContent3_1");
+
+    document.querySelector(".button_open_3_1").removeEventListener("click", hideContent3_1);
+    document.querySelector(".hidden_content_3_1").classList.add("hide");
+    document.querySelector(".button_open_3_1").addEventListener("click", checkIfOpen3_1);
+
+
+}
+
+/////////HER STARTER TEMA FOLD UD - TEMA 3 BOX 2 ////////////////////////////////
+
+document.querySelector(".button_open_3_2").addEventListener("click", checkIfOpen3_2);
+
+function checkIfOpen3_2() {
+    console.log("checkIfOpen3_2");
+
+    if (boxShow == false) {
+        boxShow = true;
+        console.log("luk for box");
+        document.querySelector("#tema_03 .button_open_3_2").removeEventListener("click", checkIfOpen3_2);
+        //Ny linje
+        document.querySelector(".button_open_3_2").classList = ("button_open_3_2");
+        document.querySelector(".button_open_3_2").classList.add("on_off");
+        document.querySelector(".button_open_3_2").classList.add("top");
+        document.querySelector(".button_open_3_2").classList.remove("on");
+        hideContent3_2();
+
+    } else {
+        boxShow = false;
+        console.log("åben for box");
+        document.querySelector("#tema_03 .button_open_3_2").removeEventListener("click", checkIfOpen3_2);
+        //Ny linje
+        document.querySelector(".button_open_3_2").classList = ("button_open_3_2");
+        document.querySelector(".button_open_3_2").classList.add("off_on");
+        document.querySelector(".button_open_3_2").classList.add("down");
+        document.querySelector(".button_open_3_2").classList.remove("off");
+        showContent3_2();
+
+    }
+}
+
+function showContent3_2() {
+    console.log("showContent3_2");
+
+    document.querySelector(".button_open_3_2").removeEventListener("click", showContent3_2);
+
+    document.querySelector(".hidden_content_3_2").classList.remove("hide");
+    document.querySelector(".button_open_3_2").addEventListener("click", checkIfOpen3_2);
+
+}
+
+function hideContent3_2() {
+    console.log("hideContent3_2");
+
+    document.querySelector(".button_open_3_2").removeEventListener("click", hideContent3_2);
+    document.querySelector(".hidden_content_3_2").classList.add("hide");
+    document.querySelector(".button_open_3_2").addEventListener("click", checkIfOpen3_2);
+
+
+}
+
+/////////HER STARTER TEMA FOLD UD - TEMA 3 BOX 3 ////////////////////////////////
+
+document.querySelector(".button_open_3_3").addEventListener("click", checkIfOpen3_3);
+
+function checkIfOpen3_3() {
+    console.log("checkIfOpen3_3");
+
+    if (boxShow == false) {
+        boxShow = true;
+        console.log("luk for box");
+        document.querySelector("#tema_03 .button_open_3_3").removeEventListener("click", checkIfOpen3_3);
+        //Ny linje
+        document.querySelector(".button_open_3_3").classList = ("button_open_3_3");
+        document.querySelector(".button_open_3_3").classList.add("on_off");
+        document.querySelector(".button_open_3_3").classList.add("top");
+        document.querySelector(".button_open_3_3").classList.remove("on");
+        hideContent3_3();
+
+    } else {
+        boxShow = false;
+        console.log("åben for box");
+        document.querySelector("#tema_03 .button_open_3_3").removeEventListener("click", checkIfOpen3_3);
+        //Ny linje
+        document.querySelector(".button_open_3_3").classList = ("button_open_3_3");
+        document.querySelector(".button_open_3_3").classList.add("off_on");
+        document.querySelector(".button_open_3_3").classList.add("down");
+        document.querySelector(".button_open_3_3").classList.remove("off");
+        showContent3_3();
+
+    }
+}
+
+function showContent3_3() {
+    console.log("showContent3_3");
+
+    document.querySelector(".button_open_3_3").removeEventListener("click", showContent3_3);
+
+    document.querySelector(".hidden_content_3_3").classList.remove("hide");
+    document.querySelector(".button_open_3_3").addEventListener("click", checkIfOpen3_3);
+
+}
+
+function hideContent3_3() {
+    console.log("hideContent3_3");
+
+    document.querySelector(".button_open_3_3").removeEventListener("click", hideContent3_3);
+    document.querySelector(".hidden_content_3_3").classList.add("hide");
+    document.querySelector(".button_open_3_3").addEventListener("click", checkIfOpen3_3);
+
+
+}
+
+/////////HER STARTER TEMA FOLD UD - TEMA 4 BOX 1 ////////////////////////////////
+
+document.querySelector(".button_open_4_1").addEventListener("click", checkIfOpen4_1);
+
+function checkIfOpen4_1() {
+    console.log("checkIfOpen4_1");
+
+    if (boxShow == false) {
+        boxShow = true;
+        console.log("luk for box");
+        document.querySelector("#tema_04 .button_open_4_1").removeEventListener("click", checkIfOpen4_1);
+        //Ny linje
+        document.querySelector(".button_open_4_1").classList = ("button_open_4_1");
+        document.querySelector(".button_open_4_1").classList.add("on_off");
+        document.querySelector(".button_open_4_1").classList.add("top");
+        document.querySelector(".button_open_4_1").classList.remove("on");
+        hideContent4_1();
+
+    } else {
+        boxShow = false;
+        console.log("åben for box");
+        document.querySelector("#tema_04 .button_open_4_1").removeEventListener("click", checkIfOpen4_1);
+        //Ny linje
+        document.querySelector(".button_open_4_1").classList = ("button_open_4_1");
+        document.querySelector(".button_open_4_1").classList.add("off_on");
+        document.querySelector(".button_open_4_1").classList.add("down");
+        document.querySelector(".button_open_4_1").classList.remove("off");
+        showContent4_1();
+
+    }
+}
+
+function showContent4_1() {
+    console.log("showContent4_1");
+
+    document.querySelector(".button_open_4_1").removeEventListener("click", showContent4_1);
+
+    document.querySelector(".hidden_content_4_1").classList.remove("hide");
+    document.querySelector(".button_open_4_1").addEventListener("click", checkIfOpen4_1);
+
+}
+
+function hideContent4_1() {
+    console.log("hideContent4_1");
+
+    document.querySelector(".button_open_4_1").removeEventListener("click", hideContent4_1);
+    document.querySelector(".hidden_content_4_1").classList.add("hide");
+    document.querySelector(".button_open_4_1").addEventListener("click", checkIfOpen4_1);
+
+
+}
+
+/////////HER STARTER TEMA FOLD UD - TEMA 4 BOX 2 ////////////////////////////////
+
+document.querySelector(".button_open_4_2").addEventListener("click", checkIfOpen4_2);
+
+function checkIfOpen4_2() {
+    console.log("checkIfOpen4_2");
+
+    if (boxShow == false) {
+        boxShow = true;
+        console.log("luk for box");
+        document.querySelector("#tema_04 .button_open_4_2").removeEventListener("click", checkIfOpen4_2);
+        //Ny linje
+        document.querySelector(".button_open_4_2").classList = ("button_open_4_2");
+        document.querySelector(".button_open_4_2").classList.add("on_off");
+        document.querySelector(".button_open_4_2").classList.add("top");
+        document.querySelector(".button_open_4_2").classList.remove("on");
+        hideContent4_2();
+
+    } else {
+        boxShow = false;
+        console.log("åben for box");
+        document.querySelector("#tema_04 .button_open_4_2").removeEventListener("click", checkIfOpen4_2);
+        //Ny linje
+        document.querySelector(".button_open_4_2").classList = ("button_open_4_2");
+        document.querySelector(".button_open_4_2").classList.add("off_on");
+        document.querySelector(".button_open_4_2").classList.add("down");
+        document.querySelector(".button_open_4_2").classList.remove("off");
+        showContent4_2();
+
+    }
+}
+
+function showContent4_2() {
+    console.log("showContent4_2");
+
+    document.querySelector(".button_open_4_2").removeEventListener("click", showContent4_2);
+
+    document.querySelector(".hidden_content_4_2").classList.remove("hide");
+    document.querySelector(".button_open_4_2").addEventListener("click", checkIfOpen4_2);
+
+}
+
+function hideContent4_2() {
+    console.log("hideContent4_2");
+
+    document.querySelector(".button_open_4_2").removeEventListener("click", hideContent4_2);
+    document.querySelector(".hidden_content_4_2").classList.add("hide");
+    document.querySelector(".button_open_4_2").addEventListener("click", checkIfOpen4_2);
+
+
+}
+
+/////////HER STARTER TEMA FOLD UD - TEMA 4 BOX 3 ////////////////////////////////
+
+document.querySelector(".button_open_4_3").addEventListener("click", checkIfOpen4_3);
+
+function checkIfOpen4_3() {
+    console.log("checkIfOpen4_3");
+
+    if (boxShow == false) {
+        boxShow = true;
+        console.log("luk for box");
+        document.querySelector("#tema_04 .button_open_4_3").removeEventListener("click", checkIfOpen4_3);
+        //Ny linje
+        document.querySelector(".button_open_4_3").classList = ("button_open_4_3");
+        document.querySelector(".button_open_4_3").classList.add("on_off");
+        document.querySelector(".button_open_4_3").classList.add("top");
+        document.querySelector(".button_open_4_3").classList.remove("on");
+        hideContent4_3();
+
+    } else {
+        boxShow = false;
+        console.log("åben for box");
+        document.querySelector("#tema_04 .button_open_4_3").removeEventListener("click", checkIfOpen4_3);
+        //Ny linje
+        document.querySelector(".button_open_4_3").classList = ("button_open_4_3");
+        document.querySelector(".button_open_4_3").classList.add("off_on");
+        document.querySelector(".button_open_4_3").classList.add("down");
+        document.querySelector(".button_open_4_3").classList.remove("off");
+        showContent4_3();
+
+    }
+}
+
+function showContent4_3() {
+    console.log("showContent4_3");
+
+    document.querySelector(".button_open_4_3").removeEventListener("click", showContent4_3);
+
+    document.querySelector(".hidden_content_4_3").classList.remove("hide");
+    document.querySelector(".button_open_4_3").addEventListener("click", checkIfOpen4_3);
+
+}
+
+function hideContent4_3() {
+    console.log("hideContent4_3");
+
+    document.querySelector(".button_open_4_3").removeEventListener("click", hideContent4_3);
+    document.querySelector(".hidden_content_4_3").classList.add("hide");
+    document.querySelector(".button_open_4_3").addEventListener("click", checkIfOpen4_3);
+
+
+}
+
+/////////HER STARTER TEMA FOLD UD - TEMA 4 BOX 4 ////////////////////////////////
+
+document.querySelector(".button_open_4_4").addEventListener("click", checkIfOpen4_4);
+
+function checkIfOpen4_4() {
+    console.log("checkIfOpen4_4");
+
+    if (boxShow == false) {
+        boxShow = true;
+        console.log("luk for box");
+        document.querySelector("#tema_04 .button_open_4_4").removeEventListener("click", checkIfOpen4_4);
+        //Ny linje
+        document.querySelector(".button_open_4_4").classList = ("button_open_4_4");
+        document.querySelector(".button_open_4_4").classList.add("on_off");
+        document.querySelector(".button_open_4_4").classList.add("top");
+        document.querySelector(".button_open_4_4").classList.remove("on");
+        hideContent4_4();
+
+    } else {
+        boxShow = false;
+        console.log("åben for box");
+        document.querySelector("#tema_04 .button_open_4_4").removeEventListener("click", checkIfOpen4_4);
+        //Ny linje
+        document.querySelector(".button_open_4_4").classList = ("button_open_4_4");
+        document.querySelector(".button_open_4_4").classList.add("off_on");
+        document.querySelector(".button_open_4_4").classList.add("down");
+        document.querySelector(".button_open_4_4").classList.remove("off");
+        showContent4_4();
+
+    }
+}
+
+function showContent4_4() {
+    console.log("showContent4_4");
+
+    document.querySelector(".button_open_4_4").removeEventListener("click", showContent4_4);
+
+    document.querySelector(".hidden_content_4_4").classList.remove("hide");
+    document.querySelector(".button_open_4_4").addEventListener("click", checkIfOpen4_4);
+
+}
+
+function hideContent4_4() {
+    console.log("hideContent4_4");
+
+    document.querySelector(".button_open_4_4").removeEventListener("click", hideContent4_4);
+    document.querySelector(".hidden_content_4_4").classList.add("hide");
+    document.querySelector(".button_open_4_4").addEventListener("click", checkIfOpen4_4);
+
+
+}
 
 
 
