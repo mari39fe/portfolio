@@ -81,6 +81,7 @@ p {
     height: 10vw;
     top: 88vh;
     left: 85vw;
+    z-index: 2;
 }
 
 #splash_button {
@@ -745,7 +746,7 @@ p {
 
 
 #tema_01 .sectionwrapper {
-    background-color: #4d7489;
+    background-color: #edc7cd;
     margin: 0 10vw 0vw 10vw;
     padding: 0 0 2vw 0;
 }
@@ -839,7 +840,8 @@ p {
 }
 
 #tema_01 .title_1 {
-    background-image: url(sky.jpg);
+    background-image: url(billeder/yayoi_sculpture.jpg);
+    background-size: cover;
     width: 40vw;
     height: 48vw;
     top: 0vw;
@@ -862,7 +864,8 @@ p {
 }*/
 
 #tema_01 .title_2 {
-    background-color: #831a3c;
+    background-image: url(billeder/tablet_portrait.jpg);
+    background-size: cover;
     width: 40vw;
     height: 48vw;
     top: 0vw;
@@ -913,7 +916,7 @@ p {
 }
 
 #tema_02 .sectionwrapper {
-    background-color: #c65f46;
+    background-color: #bedede;
     margin: 0 10vw;
     padding: 0 0 2vw 0;
 }
@@ -1000,7 +1003,8 @@ p {
 }
 
 #tema_02 .title_2_1 {
-    background-image: url(sky.jpg);
+    background-image: url(billeder/Sk%C3%A6rmbillede%202019-01-08%20kl.%2001.32.06.png);
+    background-size: cover;
     width: 40vw;
     height: 48vw;
     top: 0vw;
@@ -1011,7 +1015,8 @@ p {
 
 
 #tema_02 .title_2_2 {
-    background-color: #831a3c;
+    background-image: url(billeder/behandlet2.jpg);
+    background-size: cover;
     width: 40vw;
     height: 48vw;
     top: 0vw;
@@ -1021,7 +1026,8 @@ p {
 }
 
 #tema_02 .title_2_3 {
-    background-color: #831a3c;
+    background-image: url(billeder/behandlet3.jpg);
+    background-size: cover;
     width: 40vw;
     height: 48vw;
     top: 0vw;
@@ -1168,7 +1174,8 @@ p {
 }
 
 #tema_03 .title_3_1 {
-    background-image: url(sky.jpg);
+    background-image: url(billeder/Sk%C3%A6rmbillede%202019-01-08%20kl.%2018.24.28.png);
+    background-size: 100%;
     width: 40vw;
     height: 48vw;
     top: 0vw;
@@ -1179,7 +1186,8 @@ p {
 
 
 #tema_03 .title_3_2 {
-    background-color: #831a3c;
+    background-image: url(billeder/Sk%C3%A6rmbillede%202019-01-08%20kl.%2018.26.41.png);
+    background-size: cover;
     width: 40vw;
     height: 48vw;
     top: 0vw;
@@ -1190,6 +1198,8 @@ p {
 
 #tema_03 .title_3_3 {
     background-color: #831a3c;
+    background-image: url(billeder/telefon.svg);
+    background-size: cover;
     width: 40vw;
     height: 48vw;
     top: 0vw;
@@ -1253,7 +1263,7 @@ p {
 }
 
 #tema_04 .sectionwrapper {
-    background-color: #9f7598;
+    background-color: #e39d9d;
     margin: 0 10vw;
     padding: 0 0 2vw 0;
 }
@@ -1341,7 +1351,9 @@ p {
 }
 
 #tema_04 .title_4_1 {
-    background-image: url(sky.jpg);
+    background-image: url(billeder/telefon3_5.svg);
+    background-size: cover;
+    background-color: #89293b;
     width: 40vw;
     height: 48vw;
     top: 0vw;
@@ -1352,7 +1364,8 @@ p {
 
 
 #tema_04 .title_4_2 {
-    background-color: #831a3c;
+    background-image: url(billeder/kea2.svg);
+    background-size: cover;
     width: 40vw;
     height: 48vw;
     top: 0vw;
@@ -1362,7 +1375,8 @@ p {
 }
 
 #tema_04 .title_4_3 {
-    background-color: #831a3c;
+    background-image: url(billeder/paper.svg);
+    background-size: cover;
     width: 40vw;
     height: 48vw;
     top: 0vw;
@@ -1372,7 +1386,9 @@ p {
 }
 
 #tema_04 .title_4_4 {
-    background-color: #831a3c;
+    background-image: url(billeder/telefon3_2_1.svg);
+    background-size: cover;
+    background-color: #89293b;
     width: 40vw;
     height: 48vw;
     top: 0vw;
@@ -1451,7 +1467,7 @@ p {
 }
 
 #about .sectionwrapper {
-    background-color: #b9c974;
+    background-color: #add1d9;
     margin: 0 10vw;
     padding: 0;
 }
@@ -1538,7 +1554,7 @@ p {
 /****************************** HER STARTER FOOTER **************************************/
 
 #footer .sectionwrapper {
-    background-color: #b9c974;
+    background-color: #add1d9;
     margin: 10vw 10vw 0 10vw;
     padding: 0;
 }
