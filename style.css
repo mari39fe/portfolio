@@ -80,7 +80,7 @@ p {
     background-size: 100%;
     position: fixed;
     border-radius: 50%;
-    background-color: beige;
+    background-color: #f8f4e7;
     width: 10vw;
     height: 10vw;
     top: 88vh;
@@ -97,6 +97,29 @@ p {
     top: 45.5vw;
     left: 47vw;
 }
+
+.link p {
+    padding: 1vw;
+    font-style: italic;
+}
+
+.date p {
+    padding: 0.5vw;
+}
+
+
+a {
+    text-decoration: none;
+
+}
+
+a:visited,
+a:active,
+a:link,
+a:hover {
+    color: #000000;
+}
+
 
 /************************** FÆLLES FOR TEMAERNE - IMAGE OVERLAY **********************************/
 
@@ -859,7 +882,7 @@ p {
     left: 29vw;
     background-size: cover;
     background-image: url(svg/arrow_down.svg);
-    background-color: beige;
+    background-color: #f8f4e7;
     cursor: pointer;
 
 }*/
@@ -884,7 +907,7 @@ p {
     position: absolute;
     cursor: pointer;
     background-image: url(svg/arrow_sprite_ny.svg);
-    background-color: beige;
+    background-color: #f8f4e7;
 
 
 }
@@ -898,7 +921,7 @@ p {
     position: absolute;
     cursor: pointer;
     background-image: url(svg/arrow_sprite_ny.svg);
-    background-color: beige;
+    background-color: #f8f4e7;
 
 }
 
@@ -1046,7 +1069,7 @@ p {
     position: absolute;
     cursor: pointer;
     background-image: url(svg/arrow_sprite_ny.svg);
-    background-color: beige;
+    background-color: #f8f4e7;
 
 }
 
@@ -1059,7 +1082,7 @@ p {
     position: absolute;
     cursor: pointer;
     background-image: url(svg/arrow_sprite_ny.svg);
-    background-color: beige;
+    background-color: #f8f4e7;
 
 }
 
@@ -1072,7 +1095,7 @@ p {
     position: absolute;
     cursor: pointer;
     background-image: url(svg/arrow_sprite_ny.svg);
-    background-color: beige;
+    background-color: #f8f4e7;
 
 }
 
@@ -1218,7 +1241,7 @@ p {
     position: absolute;
     cursor: pointer;
     background-image: url(svg/arrow_sprite_ny.svg);
-    background-color: beige;
+    background-color: #f8f4e7;
 
 }
 
@@ -1231,7 +1254,7 @@ p {
     position: absolute;
     cursor: pointer;
     background-image: url(svg/arrow_sprite_ny.svg);
-    background-color: beige;
+    background-color: #f8f4e7;
 
 }
 
@@ -1244,7 +1267,7 @@ p {
     position: absolute;
     cursor: pointer;
     background-image: url(svg/arrow_sprite_ny.svg);
-    background-color: beige;
+    background-color: #f8f4e7;
 
 }
 
@@ -1408,7 +1431,7 @@ p {
     position: absolute;
     cursor: pointer;
     background-image: url(svg/arrow_sprite_ny.svg);
-    background-color: beige;
+    background-color: #f8f4e7;
 
 }
 
@@ -1421,7 +1444,7 @@ p {
     position: absolute;
     cursor: pointer;
     background-image: url(svg/arrow_sprite_ny.svg);
-    background-color: beige;
+    background-color: #f8f4e7;
 
 }
 
@@ -1434,7 +1457,7 @@ p {
     position: absolute;
     cursor: pointer;
     background-image: url(svg/arrow_sprite_ny.svg);
-    background-color: beige;
+    background-color: #f8f4e7;
 
 }
 
@@ -1447,7 +1470,7 @@ p {
     position: absolute;
     cursor: pointer;
     background-image: url(svg/arrow_sprite_ny.svg);
-    background-color: beige;
+    background-color: #f8f4e7;
 
 }
 
@@ -1550,6 +1573,12 @@ p {
     padding: 3vw 0 2vw 2vw;
 }
 
+.icons img {
+    width: 6vw;
+    height: 6vw;
+    margin: 0.7vw;
+}
+
 
 
 /****************************** HER STARTER FOOTER **************************************/
@@ -1589,7 +1618,7 @@ p {
     position: absolute;
     cursor: pointer;
     background-image: url(svg/arrow_sprite_ny.svg);
-    background-color: beige;
+    background-color: #f8f4e7;
 
 
 }
