@@ -98,7 +98,7 @@ p {
 
 #item_name {
     position: relative;
-    width: 50%;
+    width: 100%;
 }
 
 .graphics {
@@ -1001,6 +1001,7 @@ p {
 
 #tema_02 .title_2_1 {
     background-image: url(sky.jpg);
+    position: relative;
     width: 40vw;
     height: 48vw;
     top: 0vw;
@@ -1012,6 +1013,7 @@ p {
 
 #tema_02 .title_2_2 {
     background-color: #831a3c;
+    position: relative;
     width: 40vw;
     height: 48vw;
     top: 0vw;
@@ -1035,7 +1037,7 @@ p {
     width: 8vw;
     height: 8vw;
     top: 4.1vw;
-    left: 29vw;
+    left: 69vw;
     position: absolute;
     cursor: pointer;
     background-image: url(svg/arrow_sprite.svg);
@@ -1169,6 +1171,7 @@ p {
 
 #tema_03 .title_3_1 {
     background-image: url(sky.jpg);
+    position: relative;
     width: 40vw;
     height: 48vw;
     top: 0vw;
@@ -1203,7 +1206,7 @@ p {
     width: 8vw;
     height: 8vw;
     top: 4.1vw;
-    left: 29vw;
+    left: 69vw;
     position: absolute;
     cursor: pointer;
     background-image: url(svg/arrow_sprite.svg);
@@ -1342,6 +1345,7 @@ p {
 
 #tema_04 .title_4_1 {
     background-image: url(sky.jpg);
+    position: relative;
     width: 40vw;
     height: 48vw;
     top: 0vw;
@@ -1373,6 +1377,7 @@ p {
 
 #tema_04 .title_4_4 {
     background-color: #831a3c;
+    position: relative;
     width: 40vw;
     height: 48vw;
     top: 0vw;
@@ -1387,7 +1392,7 @@ p {
     width: 8vw;
     height: 8vw;
     top: 4.1vw;
-    left: 29vw;
+    left: 69vw;
     position: absolute;
     cursor: pointer;
     background-image: url(svg/arrow_sprite.svg);
@@ -1426,7 +1431,7 @@ p {
     width: 8vw;
     height: 8vw;
     top: 4.1vw;
-    left: 29vw;
+    left: 69vw;
     position: absolute;
     cursor: pointer;
     background-image: url(svg/arrow_sprite.svg);
