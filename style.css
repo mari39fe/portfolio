@@ -93,6 +93,49 @@ p {
     left: 47vw;
 }
 
+/************************** FÆLLES FOR TEMAERNE - IMAGE OVERLAY **********************************/
+
+
+#item_name {
+    position: relative;
+    width: 50%;
+}
+
+.graphics {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: .5s ease;
+    background-color: lightpink;
+}
+
+#item_name:hover .overlay {
+    opacity: 0;
+}
+
+.graphics_text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
 /************************** FÆLLES FOR TEMAERNE **********************************/
 
 .tema_overview p {
@@ -1274,11 +1317,11 @@ p {
     animation-iteration-count: 1;
 }
 
-.show {
+/*.show {
     animation-name: open_kf;
     animation-duration: 1s;
     animation-fill-mode: both;
-}
+}*/
 
 @keyframes on_off_kf {
     0% {
@@ -1300,7 +1343,7 @@ p {
     }
 }
 
-@keyframes open_kf {
+/*@keyframes open_kf {
     0% {
         display: block;
     }
@@ -1317,4 +1360,4 @@ p {
     100% {
         display: none;
     }
-}
+}*/

@@ -175,7 +175,7 @@ function showContent1() {
     console.log("showContent1");
 
     document.querySelector(".button_open_1").removeEventListener("click", showContent1);
-    document.querySelector(".description").classList.toggle("show");
+    document.querySelector(".hidden_content_1").classList.add("hide");
     document.querySelector(".button_open_1").addEventListener("click", checkIfOpen);
 
 
