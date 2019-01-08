@@ -26,6 +26,10 @@ html {
     scroll-behavior: smooth;
 }
 
+iframe {
+    width: 100%;
+}
+
 img {
 
     width: 100%;
@@ -116,7 +120,7 @@ p {
     right: 0;
     height: 100%;
     width: 100%;
-    opacity: 0.6;
+    opacity: 0.8;
     transition: .5s ease;
     background-color: white;
 }
@@ -160,10 +164,7 @@ p {
     text-align: center;
 }
 
-/*.button_open {
-    flex-grow: 1;
-    flex-basis: 20px;
-}*/
+
 
 .description {
     display: flex;
@@ -173,12 +174,12 @@ p {
 
 .column_text {
     flex-grow: 1;
-    flex-basis: 20px;
+    flex-basis: 235px;
 }
 
 .column_image {
     flex-grow: 1;
-    flex-basis: 20px;
+    flex-basis: 235px;
 }
 
 .gallery {
@@ -1577,11 +1578,6 @@ p {
     display: none;
 }
 
-/*.hidden_content_1 {
-    animation-name: open_kf;
-    animation-duration: 3s;
-    animation-iteration-count: 2;
-}*/
 
 
 .button_open_1 {
@@ -1611,11 +1607,7 @@ p {
     animation-iteration-count: 1;
 }
 
-/*.show {
-    animation-name: open_kf;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-}*/
+
 
 @keyframes on_off_kf {
     0% {
@@ -1637,21 +1629,21 @@ p {
     }
 }
 
-/*@keyframes open_kf {
-    0% {
-        display: block;
-    }
-
-    1% {
-        opacity: 0;
-    }
 
 
-    99% {
-        opacity: 1;
+/***************************** HER STARTER MEDIA QUERYS ************************************/
+
+@media only screen and (max-width:600px) {
+
+    #tema_01 .button_open_1,
+    #tema_01 .button_open_2,
+    #tema_02 .button_open_2_2,
+    #tema_02 .button_open_2_3,
+    #tema_03 .button_open_3_2,
+    #tema_03 .button_open_3_3,
+    #tema_04 .button_open_4_2,
+    #tema_04 .button_open_4_3 {
+        left: 69vw;
     }
 
-    100% {
-        display: none;
-    }
-}*/
+}
