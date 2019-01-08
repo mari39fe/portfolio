@@ -107,7 +107,7 @@ function buttonAppear() {
 
 }
 
-/////////HER STARTER TEMA FOLD UD  ////////////////////////////////
+/////////HER STARTER TEMA FOLD UD - TEMA 1 BOX1 ////////////////////////////////
 
 
 //Prøver lige igen
@@ -121,132 +121,108 @@ function checkIfOpen() {
 
     if (boxShow == false) {
         boxShow = true;
-        //soundsOff();
-        console.log("tænd for box");
-        //tænd for sfx
+        console.log("luk for box");
         document.querySelector("#tema_01 .button_open_1").removeEventListener("click", checkIfOpen);
         //Ny linje
         document.querySelector(".button_open_1").classList = ("button_open_1");
         document.querySelector(".button_open_1").classList.add("on_off");
         document.querySelector(".button_open_1").classList.add("top");
         document.querySelector(".button_open_1").classList.remove("on");
-        showContent1();
+        hideContent1();
 
     } else {
         boxShow = false;
-        //soundsOn();
-        console.log("sluk for box");
-        //sluk for sfx
+        console.log("åben for box");
         document.querySelector("#tema_01 .button_open_1").removeEventListener("click", checkIfOpen);
         //Ny linje
         document.querySelector(".button_open_1").classList = ("button_open_1");
         document.querySelector(".button_open_1").classList.add("off_on");
         document.querySelector(".button_open_1").classList.add("down");
         document.querySelector(".button_open_1").classList.remove("off");
-        hideContent1();
+        showContent1();
 
     }
 }
 
-
-function hideContent1() {
-    console.log("hideContent1");
-
-    document.querySelector(".button_open_1").removeEventListener("click", hideContent1);
-
-    document.querySelector(".hidden_content_1").classList.remove("hide");
-    document.querySelector(".button_open_1").addEventListener("click", checkIfOpen);
-
-
-    //Mathias har slettet alt dette
-    /* //skift grafik fra grøn til rød
-    document.querySelector(".button_open_1").classList.add("off")
-    document.querySelector(".button_open_1").classList.remove("on")
-
-    //gå til state of off
-    document.querySelector(".button_open_1").classList.remove("on_off");
-    document.querySelector(".button_open_1").classList.add("off");
-*/
-
-
-}
 
 function showContent1() {
     console.log("showContent1");
 
     document.querySelector(".button_open_1").removeEventListener("click", showContent1);
+
+    document.querySelector(".hidden_content_1").classList.remove("hide");
+    document.querySelector(".button_open_1").addEventListener("click", checkIfOpen);
+
+}
+
+function hideContent1() {
+    console.log("hideContent1");
+
+    document.querySelector(".button_open_1").removeEventListener("click", hideContent1);
     document.querySelector(".hidden_content_1").classList.add("hide");
     document.querySelector(".button_open_1").addEventListener("click", checkIfOpen);
 
 
-    //Mathias har slettet alt dette
-    /* //skift grafik fra rød til grøn
-    document.querySelector(".button_open_1").classList.remove("off")
-    document.querySelector(".button_open_1").classList.add("on")
-
-    //gå til state of on
-    document.querySelector(".button_open_1").classList.remove("off_on");
-    document.querySelector(".button_open_1").classList.add("on");
-*/
-
-
 }
 
+/////////HER STARTER TEMA FOLD UD - TEMA 1 BOX2 ////////////////////////////////
 
 
-/*// Det her skulle gerne få
-document.querySelector("#tema_01 .button_open_1").addEventListener("click", checkIfOpen);
+//Prøver lige igen
 
 
-//Prøver lige noget
-function checkIfOpen() {
-    console.log("checkIfOpen");
-    let h = document.querySelector(".button_open_1");
-    let c = document.querySelector(".hidden_content_1")
-    if (c.className = "open") {
-        //c.className += " hide";
-        document.querySelector(".button_open_1").addEventListener("click", hideContent1);
+document.querySelector(".button_open_2").addEventListener("click", checkIfOpen2);
+
+function checkIfOpen2() {
+    console.log("checkIfOpen2");
+
+    if (boxShow == false) {
+        boxShow = true;
+        console.log("luk for box");
+        document.querySelector("#tema_01 .button_open_2").removeEventListener("click", checkIfOpen2);
+        //Ny linje
+        document.querySelector(".button_open_2").classList = ("button_open_2");
+        document.querySelector(".button_open_2").classList.add("on_off");
+        document.querySelector(".button_open_2").classList.add("top");
+        document.querySelector(".button_open_2").classList.remove("on");
+        hideContent2();
+
     } else {
-        document.querySelector(".button_open_1").addEventListener("click", showContent1);
+        boxShow = false;
+        console.log("åben for box");
+        document.querySelector("#tema_01 .button_open_2").removeEventListener("click", checkIfOpen2);
+        //Ny linje
+        document.querySelector(".button_open_2").classList = ("button_open_2");
+        document.querySelector(".button_open_2").classList.add("off_on");
+        document.querySelector(".button_open_2").classList.add("down");
+        document.querySelector(".button_open_2").classList.remove("off");
+        showContent2();
+
     }
+}
+
+
+function showContent2() {
+    console.log("showContent2");
+
+    document.querySelector(".button_open_2").removeEventListener("click", showContent2);
+
+    document.querySelector(".hidden_content_2").classList.remove("hide");
+    document.querySelector(".button_open_2").addEventListener("click", checkIfOpen2);
 
 }
 
-function showContent1() {
-    console.log("showContent1");
-    document.querySelector(".hidden_content_1").classList.remove("hide");
-    document.querySelector(".hidden_content_1").classList.add("open");
-    checkIfOpen();
+function hideContent2() {
+    console.log("hideContent2");
+
+    document.querySelector(".button_open_2").removeEventListener("click", hideContent2);
+    document.querySelector(".hidden_content_2").classList.add("hide");
+    document.querySelector(".button_open_2").addEventListener("click", checkIfOpen2);
+
 
 }
 
-function hideContent1() {
-    console.log("hideContent1");
-    document.querySelector(".hidden_content_1").classList = ("hide");
-}*/
 
-
-//////////////////////////
-
-
-
-
-/*
-let hidden = document.querySelector(".button_open_1")
-
-
-function checkIfOpen() {
-    if
-}
-
-document.querySelector("#tema_01 .button_open_1 open").addEventListener("click", hideContent1);
-
-
-function hideContent1() {
-    console.log("hideContent1");
-    document.querySelector(".hidden_content_1").classList.add("hide");
-}
-*/
 
 
 ///////////////////HER STARTER SCROLL EVENTS - DEN GENERELLE FUNKTION  /////////////////////////

@@ -871,17 +871,33 @@ p {
 
 }
 
-#tema_01 .button_open_2 {
-    position: absolute;
+#tema_01 .button_open_1 {
+    background-size: 500% 100%;
     width: 8vw;
     height: 8vw;
     top: 4.1vw;
     left: 29vw;
-    background-size: cover;
-    background-image: url(svg/arrow_down.svg);
+    position: absolute;
+    cursor: pointer;
+    background-image: url(svg/arrow_sprite.svg);
+    background-color: beige;
+
+
+}
+
+#tema_01 .button_open_2 {
+    background-size: 500% 100%;
+    width: 8vw;
+    height: 8vw;
+    top: 4.1vw;
+    left: 29vw;
+    position: absolute;
+    cursor: pointer;
+    background-image: url(svg/arrow_sprite.svg);
     background-color: beige;
 
 }
+
 
 
 /****************************** HER STARTER TEMA 02 **************************************/
@@ -975,6 +991,58 @@ p {
     margin: 0;
     font-size: 9vw;
 }
+
+
+#tema_02 #item_name {
+    position: relative;
+}
+
+#tema_02 .title_2_1 {
+    background-image: url(sky.jpg);
+    width: 40vw;
+    height: 48vw;
+    top: 0vw;
+    flex-basis: 50px;
+    flex-grow: 1;
+
+}
+
+
+#tema_02 .title_2_2 {
+    background-color: #831a3c;
+    width: 40vw;
+    height: 48vw;
+    top: 0vw;
+    flex-basis: 50px;
+    flex-grow: 1;
+
+}
+
+#tema_02 .button_open_2_1 {
+    position: absolute;
+    width: 8vw;
+    height: 8vw;
+    top: 4.1vw;
+    left: 29vw;
+    background-size: cover;
+    background-image: url(svg/arrow_down.svg);
+    background-color: beige;
+
+}
+
+#tema_02 .button_open_2_2 {
+    position: absolute;
+    width: 8vw;
+    height: 8vw;
+    top: 4.1vw;
+    left: 29vw;
+    background-size: cover;
+    background-image: url(svg/arrow_down.svg);
+    background-color: beige;
+
+}
+
+
 
 /****************************** HER STARTER TEMA 03 **************************************/
 #animationwrapper_tema_03 {
