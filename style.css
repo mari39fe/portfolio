@@ -250,6 +250,8 @@ a:hover {
 
 }
 
+
+
 /* Style the links inside the navigation bar */
 .topnav a {
     float: left;
@@ -313,6 +315,11 @@ a:hover {
 @media screen and (max-width: 600px) {
     .topnav.responsive {
         position: relative;
+    }
+
+    .topnav.responsive {
+        position: relative;
+        display: block;
     }
 
     .topnav.responsive a.icon {
